@@ -6,3 +6,6 @@ long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          "0.0.1"
 
 %w/ubuntu/.each { |os| supports os }
+
+recipe           "python-minimal::2.6", ">= 0.0.1"
+recipe           "python-minimal::2.7", ">= 0.0.1"

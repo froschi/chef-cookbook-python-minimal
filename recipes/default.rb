@@ -1,18 +1,6 @@
-packages = Array.new
-
 case node[:lsb][:codename]
 when "lucid"
-  packages |= %w/
-    python2.6-minimal
-  /
+  include_recipe "python-minimal::2.6"
 when "precise"
-  packages |= %w/
-    python2.6-minimal
-  /
-end
-
-packages.each do |pkg|
-  package pkg do
-    action [:install, :upgrade]
-  end
+  include_recipe "python-minimal::2.7"
 end
