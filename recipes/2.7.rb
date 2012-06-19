@@ -5,6 +5,7 @@ when "precise"
   packages |= %w/
     python2.7-minimal
   /
+end
 
 packages.each do |pkg|
   package pkg do

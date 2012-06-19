@@ -5,6 +5,7 @@ when "lucid"
   packages |= %w/
     python2.6-minimal
   /
+end
 
 packages.each do |pkg|
   package pkg do
